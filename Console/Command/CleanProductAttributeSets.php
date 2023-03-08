@@ -25,7 +25,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class CleanProductAttributeSets extends Command
 {
-    private const COMMAND_NAME = 'attributeset:clean';
+    private const COMMAND_NAME = 'eavattributeset:clean';
     private const ID_OPTION = 'id';
 
     /**
@@ -43,6 +43,12 @@ class CleanProductAttributeSets extends Command
      */
     private AdapterInterface $connection;
 
+    /**
+     * @param AttributeDataReaderInterface $attributeDataReader
+     * @param AttributeDataWriterInterface $attributeDataWriter
+     * @param ResourceConnection $resourceConnection
+     * @param string|null $name
+     */
     public function __construct(
         AttributeDataReaderInterface $attributeDataReader,
         AttributeDataWriterInterface $attributeDataWriter,
@@ -61,7 +67,7 @@ class CleanProductAttributeSets extends Command
     protected function configure()
     {
         $this->setName(self::COMMAND_NAME)
-            ->setDescription('Attribute Set Cleaner')
+            ->setDescription('Product Attribute Set Cleaner')
             ->setDefinition([
                 new InputOption(
                     self::ID_OPTION,
