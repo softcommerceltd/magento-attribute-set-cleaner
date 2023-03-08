@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Soft Commerce Ltd. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="SoftCommerce\AttributeSetCleaner\Model\AttributeDataReaderInterface" type="SoftCommerce\AttributeSetCleaner\Model\AttributeDataReader"/>
+    <preference for="SoftCommerce\AttributeSetCleaner\Model\AttributeDataWriterInterface" type="SoftCommerce\AttributeSetCleaner\Model\AttributeDataWriter"/>
+    <!-- CLI -->
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="product_attribute_set_cleaner" xsi:type="object">SoftCommerce\AttributeSetCleaner\Console\Command\CleanProductAttributeSets</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
