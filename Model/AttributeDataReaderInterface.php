@@ -40,6 +40,11 @@ interface AttributeDataReaderInterface
     public function getAttributeDataByAttributeSetId(int $attributeSetId = null): array;
 
     /**
+     * @return array
+     */
+    public function getAttributeSetIds(): array;
+
+    /**
      * @param int|null $attributeId
      * @param string|null $index
      * @return array|mixed|null

@@ -109,7 +109,7 @@ class CleanProductAttributeSets extends Command
     private function process(OutputInterface $output, array $requestCriteria = []): void
     {
         $attributeTypeId = $this->attributeDataReader->getEntityTypeId();
-        foreach ($this->attributeDataReader->getAttributeSetIdToAttributeId() as $attributeSetId => $attributeIds) {
+        foreach ($this->attributeDataReader->getAttributeSetIds() as $attributeSetId) {
             if ($requestCriteria && !in_array($attributeSetId, $requestCriteria)) {
                 continue;
             }

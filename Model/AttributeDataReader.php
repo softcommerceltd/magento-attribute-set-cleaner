@@ -120,6 +120,14 @@ class AttributeDataReader implements AttributeDataReaderInterface
     /**
      * @inheritDoc
      */
+    public function getAttributeSetIds(): array
+    {
+        return array_keys($this->getAttributeSetIdToAttributeId());
+    }
+
+    /**
+     * @inheritDoc
+     */
     public function getAttributeData(?int $attributeId = null, ?string $index = null)
     {
         if (null === $attributeId) {
