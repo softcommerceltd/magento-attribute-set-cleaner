@@ -13,7 +13,7 @@ use Magento\Catalog\Model\ResourceModel\Eav\Attribute;
 use Magento\Catalog\Model\ResourceModel\Product\Attribute\CollectionFactory;
 use Magento\Framework\App\ResourceConnection;
 use Magento\Framework\DB\Adapter\AdapterInterface;
-use SoftCommerce\Core\Model\Utils\GetEntityTypeIdInterface;
+use SoftCommerce\Core\Model\Eav\GetEntityTypeIdInterface;
 use function array_filter;
 use function array_keys;
 use function current;

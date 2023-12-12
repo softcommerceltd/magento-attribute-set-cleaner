@@ -10,6 +10,7 @@
     <module name="SoftCommerce_AttributeSetCleaner">
         <sequence>
             <module name="Magento_Eav"/>
+            <module name="SoftCommerce_Core"/>
         </sequence>
     </module>
 </config>

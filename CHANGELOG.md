@@ -1,13 +1,7 @@
 ## Changelog
 
-### Version 1.0.3
-- **Enhancement**: Minor decorative changes to codebase.
-
-### Version 1.0.2
-- **Compatibility**: Compatibility with Magento Open Source 2.4.5
-
 ### Version 1.0.1
-- **Compatibility**: Compatibility with Magento Open Source 2.4.4
+- **Compatibility**: Added compatibility for `SoftCommerce_Core` module.
 
 ### Version 1.0.0
-- **Feature**: Create fake order entity including invoice and shipment.
+- **Feature**: New functionality to enable cleaning attributes sets.

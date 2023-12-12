@@ -2,8 +2,9 @@
     "name": "softcommerce/module-attribute-set-cleaner",
     "description": "Cleans attribute set by removing un-used attributes in the given set.",
     "require": {
-        "php": "~7.4.0||~8.0.0||~8.1.0",
-        "magento/module-eav": "*"
+        "php": "~8.0.0||~8.1.0||~8.2.0",
+        "magento/module-eav": "*",
+        "softcommerce/module-core": "*"
     },
     "type": "magento2-module",
     "license": "MIT",
@@ -15,5 +16,5 @@
             "SoftCommerce\\AttributeSetCleaner\\": ""
         }
     },
-    "version": "1.0.0"
+    "version": "1.0.1"
 }
