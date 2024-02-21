@@ -25,7 +25,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class CleanProductAttributeSets extends Command
 {
-    private const COMMAND_NAME = 'eavattributeset:clean';
+    private const COMMAND_NAME = 'product:attribute:set:clean';
     private const ID_OPTION = 'id';
 
     /**
@@ -64,7 +64,7 @@ class CleanProductAttributeSets extends Command
     /**
      * @inheritDoc
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName(self::COMMAND_NAME)
             ->setDescription('Product Attribute Set Cleaner')
